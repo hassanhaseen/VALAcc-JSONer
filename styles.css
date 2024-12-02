@@ -1,0 +1,125 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222831;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main Container Styling */
+.container {
+    background-color: #31363F;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Header Styling */
+h1 {
+    text-align: center;
+    background: linear-gradient(45deg, #76abac, #4b5b9e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add space between rows */
+}
+
+/* Row Styling */
+.form-row {
+    display: flex;
+    gap: 30px; /* Increased horizontal gap */
+    justify-content: space-between;
+}
+
+/* Input Field Styling */
+.input-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 8px;
+    border: 1px solid #4b5c9e71;
+    border-radius: 8px;
+    font-size: 14px;
+    resize: none;
+    background: #2A2D36;
+    color: #fff;
+    width: 100%;
+    height: 80px;
+}
+
+textarea::placeholder {
+    color: #aaa;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffffab;
+    margin-bottom: 5px;
+}
+
+/* Paste Button Styling */
+.paste-button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #4b5b9e;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.paste-button:hover {
+    background: #76ABAE;
+    color: black;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    background: #4caf4f98;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background: #76ABAE;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+}

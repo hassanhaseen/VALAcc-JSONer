@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Info Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpeg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Account Information Generator</h1>
+        <form id="dataForm">
+            <!-- Details and Store -->
+            <div class="form-row">
+                <div class="input-container">
+                    <label for="details">Details</label>
+                    <textarea id="details" placeholder="Enter account details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('details')">Paste</button>
+                </div>
+                <div class="input-container">
+                    <label for="store">Store</label>
+                    <textarea id="store" placeholder="Enter store details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('store')">Paste</button>
+                </div>
+            </div>
+            <!-- Skins and Battlepass -->
+            <div class="form-row">
+                <div class="input-container">
+                    <label for="skins">Skins</label>
+                    <textarea id="skins" placeholder="Enter skin details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('skins')">Paste</button>
+                </div>
+                <div class="input-container">
+                    <label for="battlepass">Battlepass</label>
+                    <textarea id="battlepass" placeholder="Enter battlepass details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('battlepass')">Paste</button>
+                </div>
+            </div>
+            <!-- Buddies and Cards -->
+            <div class="form-row">
+                <div class="input-container">
+                    <label for="buddies">Buddies</label>
+                    <textarea id="buddies" placeholder="Enter buddies details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('buddies')">Paste</button>
+                </div>
+                <div class="input-container">
+                    <label for="cards">Cards</label>
+                    <textarea id="cards" placeholder="Enter cards details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('cards')">Paste</button>
+                </div>
+            </div>
+            <!-- Sprays and Titles -->
+            <div class="form-row">
+                <div class="input-container">
+                    <label for="sprays">Sprays</label>
+                    <textarea id="sprays" placeholder="Enter sprays details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('sprays')">Paste</button>
+                </div>
+                <div class="input-container">
+                    <label for="titles">Titles</label>
+                    <textarea id="titles" placeholder="Enter titles details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('titles')">Paste</button>
+                </div>
+            </div>
+            <!-- Agents -->
+            <div class="form-row">
+                <div class="input-container">
+                    <label for="agents">Agents</label>
+                    <textarea id="agents" placeholder="Enter agents details here" required></textarea>
+                    <button type="button" class="paste-button" onclick="pasteText('agents')">Paste</button>
+                </div>
+            </div>
+            <button type="submit">Generate JSON</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
