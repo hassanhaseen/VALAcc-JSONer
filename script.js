@@ -229,7 +229,7 @@ ${formattedSkins}
                 current_division: currentTier,
                 previous_tier: toCamelCase(previousRanksMatches[0]?.rank),
                 previous_division: previousRanksMatches[0]?.tier || null,
-                peak_tier: peakRankObj.rank,
+                peak_tier: toCamelCase(peakRankObj.rank),
                 peak_division: peakRankObj.tier,
                 level: level,
                 valorant_points: valorantPoints,
