@@ -242,17 +242,18 @@ ${formattedSkins}
     ];
 
     // Download JSON
-const jsonString = JSON.stringify(jsonData, null, 2);
-const blob = new Blob([jsonString], { type: "application/json" });
-const link = document.createElement("a");
+    const jsonString = JSON.stringify(jsonData, null, 2);
+    const blob = new Blob([jsonString], { type: "application/json" });
+    const link = document.createElement("a");
 
-// Use IGN for the file name, fallback to "data" if IGN is not available
-const fileName = ign ? `${ign}-data.json` : "data.json";
+    // Use IGN for the file name, fallback to "data" if IGN is not available
+    const fileName = ign ? `${ign}-data.json` : "data.json";
 
-link.href = URL.createObjectURL(blob);
-link.download = fileName;
-link.click();
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+    link.click();
 
+});
 
 // Paste button functionality
 function pasteText(elementId) {
